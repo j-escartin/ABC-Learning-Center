@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Learning Center</title>
+    <link rel="icon" href="faviticon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <style>
+      /* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;700&display=swap');
+
+/*Header Background Color */
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #023047;
+  height: 60px;
+  /*Flex Box */
+  display: flex;
+  align-items: center;
+}
+/*Logo */
+#logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+/* Navigation Bar */
+nav, li,  #learn, #explore {
+  display: inline-block;
+  padding: 0px 20px;
+}
+/*Font Design*/
+#learn, #explore {
+  font-family: "Inter" , sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFB703;
+  text-decoration: none;
+}
+/*Hovering */
+#learn:hover, #explore:hover {
+  color: white;
+}
+#search {
+  position:absolute;
+  top: 40px;
+  left: 1000px;
+  transform: translate(0, -50%); 
+  border-radius: 40px;
+  padding: 0px 10px;
+  border: 4px solid  #023047;
+  background-color: white;
+}
+#searchinput {
+  width: 400px;
+  height: 40px;
+  background-color: none;
+  border-radius: 50px;
+  border: none;
+  padding: 0px 5px;
+  font-size: 20px;
+}
+#searchinput:focus {
+  outline: none;
+}
+/*icon*/
+div> .material-symbols-outlined {
+  font-size: 200%;
+  color: black;
+  display: inline-flex;
+  position: absolute;
+  top: 10%; 
+  right:5%;
+}
+/*First Section */
+/*Flex- Container */
+#first {
+  display: flex;
+  align-items: stretch;
+  height: 200px;
+}
+/*Go to Inline CSS */
+
+/*Section 2 */
+#second {
+  display: flex;
+  align-items: stretch;
+  height: 250px;
+  text-align: center;
+}
+
+/*Go to inline CSS */
+
+/* Section 3 */
+#third {
+  display: flex;
+  align-items: stretch;
+  height: 200px;
+  text-align: center;
+}
+
+/*Go to Inline CSS */
+footer {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #023047;
+  /*Text*/
+  color: white;
+  text-align: center;
+}
+/* Dropdown */
+.dropbtn {
+  background-color: #023047;
+  color:#ffb703 ;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #023047;
+  color: #ffb703;
+}
+
+ .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #023047;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <!--Left Side Navigation-->
+    <a href="../index.html" onclick="alert('Are you sure you want to leave the page?')" ><img id="logo" src="../Pictures/logo.png" alt="Logo"></a>
+    <nav id="leftnav">
+      <ul>
+        <li>
+          <li  class="dropdown">
+            <a href="" class="dropbtn" style="text-decoration:none;"> Learn</a>
+            <!-- Dropdown -->
+            <div class="dropdown-content">
+            <a href="course1.html">HTML</a>
+            <a href="course2.html">CSS</a>
+            </div>
+           <!-- Dropdown -->
+        </li>
+        <li><a onclick="alert('Are you sure you want to leave the page?')" href="courseListing.html" id="explore">Courses</a> </li>
+      </ul>
+    </nav>
+    <!--Search Bar-->
+    <form id=search action="">
+        <div>
+          <input type="text" id="searchinput" name="check" spellcheck="false" placeholder="Search Lessons">
+          <span class="material-symbols-outlined"float="right">travel_explore</span>
+        </div>
+    </form>
+    </nav>
+  </header>
+  <!--1st Section-->
+  <section id="first">
+  <!--A paragraph-->
+    <div style="flex-grow:6; padding: 60px; background-color: #219ebc; font-size: 20px; text-align: center;" >
+      Welcome to ABC Learning Center, Inc. <br>
+      A conducive website for learning <br>
+      how to code smoothly and easily.
+    </div>
+  <!--First Image-->
+    <div style="flex-grow: 4;" >
+      <img src="../Pictures/image1.png" alt="A teacher teaching a student" height="100%" width="100%">
+    </div>
+  </section>
+  <!--Second Section-->
+  <section id="second">
+    <div style="flex-grow: 3;background-color: #FFB703; writing-mode:vertical-lr;  
+    transform: rotate(180deg);">
+      <h1 style="position: relative; left:50%;">About Us</h1>
+    </div>
+    <div id="centerp" style="flex-grow:6 ;">
+      <p>
+        ABC Learning Center, Inc. has been recognized as a top coding teaching institution since <br>
+        2010.
+     </p>
+      <p>
+        ABC Learning Center' is an IT Training institute that offers courses such as 'Programming in Java,' <br>
+        'Programming in.Net,' 'Microsoft Office,' and Welcome to ABC Learning Center, Inc.
+      </p>
+      <p>
+        We provide accessible programs that allow students to master the course through <br> 
+        comprehensive lessons and modules. 
+      </p>
+      <p>
+        Not only that, but we also offer scholarships to deserving students who are unable to <br>
+        continue their studies owing to financial constraints.
+      </p>
+      <p>
+        What are you waiting for? Enroll today!
+      </p>
+    </div>
+    <div style="flex-grow: 4; background-color: #FFB703">
+    </div>
+  </section>
+  <!--3rd Section-->
+  <section id="third">
+    <div style="flex-grow:4;">
+      <img src="../Pictures/image2.png" alt="group_discussion" height="100%" width="100%">
+    </div>
+    <div style="flex-grow:6; padding: 30px; background-color:  #8ECAE6 ; font-size: 20px; text-align: center;">
+      <span class="goals"><b>Mission:</b></span> To use coding to recreate the world. <br> <br>
+      <span class="goals"><b>Vision:</b>  </span>To be a trailblazer of emerging technologies and to encourage a <br>
+      large number of individuals to change the world through artificial <br>
+      intelligence, which can only be achieved through coding, in order to make <br>
+      the world a better place.
+  </div>
+  </section>
+  <!--Footer-->
+  <footer>
+    <div style="padding: 10px;">
+      <p>
+        While using this site, you agree to have read and accepted our terms of use, cookies, privacy policy <br>
+        Copyright 2022 by ABC Learning Center. All rights reserved
+      </p>  
+    </div>
+    <div style="flex-grow: 5;">
+        <nav style="position:relative;left:35%; top:30%; padding:5px; font-size: 18px;">
+        <a class="privacy" onclick="alert('Are you sure you want to leave the page?')" href="sitemap.html"
+        style="text-decoration: none;
+        color: white;
+        padding-bottom: 0;
+        margin: 0;"> Sitemap</a> |
+        <a onclick="alert('Are you sure you want to leave the page?')" href="privacy_policy.html" id="privacy"
+        style="text-decoration: none;
+          color: white;">
+            Privacy Policy 
+        </a> |
+        <a onclick="alert('Are you sure you want to leave the page?')" href="contact_us.html" id="contact"
+        style="text-decoration: none;
+         color: white;
+         padding-right: 20px;
+         margin: 0;">Contact</a>
+        </nav>
+    </div>
+  </footer>
+</body>
+<script>
+  $(document).ready(function() {
+      let drp = true;
+      $('.dropdown-content').hide();
+      $('.dropdown').hover(function () {
+        if(drp === true) {
+          $('.dropdown-content').fadeIn();
+          drp = false;
+        } else {
+          $('.dropdown-content').fadeOut();
+           drp = true;
+        }
+      })
+  });
+</script>
+</html>

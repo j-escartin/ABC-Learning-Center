@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC_Learning_Center</title>
+    <link rel="stylesheet" href="/CSS/leadGen.css">
+    <script defer src="/JS/leadGen.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- General Container -->
+    <div id="generalCon">
+<!-- Logo Side -->
+        <div id="logSide">
+            <img src="../Pictures/logo.png" alt="logo">
+        </div>
+<!-- Form Side -->
+          <div id="formSide">
+              <form action="thankYou.html" method="get" id="form">
+                <div class="formControl">
+                  <label for="name">Name:</label>
+                  <input class="inPut" type="text" id="name" value="" required>
+                  <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                  <label for="email">Email:</label> <br>
+                  <input class="inPut" type="email" id="email" value="" placeholder="@example.com" required>
+                  <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                  <label for="contactNo">Contact No.</label> <br>
+                  <input class="inPut" type="tel" id="contact" required>
+                  <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                  <label for="courseList">Course Interested:</label> <br>
+                  <select class="inPut" name="courseList" id="courseList" style="height:40px; width: 102%; margin-bottom: 10px;" required> 
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                  </select>
+                </div>
+                <div class="formControl">
+                  <label for="address"> Adress</label> <br>
+                  <input class="inPut" type="text" id="address" required> 
+                  <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                  <input type="checkbox" id="check" value="true" required>
+                  <label for="" style="font-size: 16px;">Terms and Condition</label> 
+                  <small>&#42 Required</small>
+                </div>
+                  <button type="submit" value="submit" class="btn" style="margin-left:100px;">Submit</button>
+                  <a href="/index.html"><button type="button" class="btn">Back</button></a>
+              </form>
+          </div>
+      </div>
+</body>
+</html>

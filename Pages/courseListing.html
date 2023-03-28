@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ABC_Learning_Center</title>
+	<link rel="stylesheet" href="/CSS/courseListing.css">
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script
+    	src="https://code.jquery.com/jquery-3.6.0.js"
+    	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    	crossorigin="anonymous">
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div id="logMenu">
+			<a href="/index.html"><span id="homeIcon" class="iconify" data-icon="clarity:home-solid"></span></a> | 
+			<a href="/index.html"><img id="logo" src="/Pictures/logo.png" alt="logo"></a>
+		</div>
+		<div id="wordMenu">
+			<div id="dropDown">
+				<a class="wMLink"  class="dropbtn" href="">Learn</a>
+				<div id="dropContent">
+					<a href="course1.html">HTML</a>
+					<a href="course2.html">CSS</a>
+				</div>
+			</div>
+			<a class="wMLink" href=""></a>
+		</div>
+		<div id="searchBar">
+			<form action="" id="search">
+				<input type="text" id="searchInput" spellcheck="false" placeholder="Search Lessons">
+				<span class="material-symbols-outlined" float="right" style="font-size: 30px; color:  #023047">travel_explore</span>
+			</form>
+		</div>
+		<div id="inquire">
+			<a href="leadGen.html">Inquire</a>
+		</div>
+	</div>
+	<div id="mainBody">
+		<h1 id="courseHead">Featured Courses</h1>
+			<div id="courseContainer">
+				<div class="courseList">
+					<div class="concourse">
+						<div class="courseImage">
+							<img src="/Pictures/content1.png" alt="HTML Pic">
+						</div>
+						<div class="courseText">
+							<p>
+								 <span style="color:#219ebc;"> Web Design</span>
+								 | James Escartin | 5
+								 <span class="iconify" data-icon="emojione:star"></span>
+							</p>
+							<h1 class="title">
+								Front-End <br>
+								Designing- HTML
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div class="courseList">
+					<div class="concourse">
+						<div class="courseImage">
+							<img src="/Pictures/content2.png" alt="CSS Pic">
+						</div>
+						<div class="courseText">
+							<p>
+								<span style="color:#219ebc;"> Web Design</span>
+								| James Escartin | 5
+								<span class="iconify" data-icon="emojione:star"></span>
+						 </p>
+						 <h1 class="title">
+							 Front-End <br>
+							 Designing- CSS
+						 </h1>
+						</div>
+					</div>
+				</div>
+				<div class="courseList">
+					<div class="concourse">
+						<div class="courseImage">
+							<img src="/Pictures/content3.png" alt="JS Pic">
+						</div>
+						<div class="courseText">
+							<p>
+								<span style="color:#219ebc;"> Web Design</span>
+								| James Escartin | 5
+								<span class="iconify" data-icon="emojione:star"></span>
+						 </p>
+						 <h1 class="title">
+							 Front-End <br>
+							 Designing- JS
+						 </h1>
+						</div>
+					</div>
+				</div>
+			</div>	
+	</div>
+	<div id="footer">
+		<div id="priDes">
+			While using this site, you agree to have read and accepted our terms of use, cookies, privacy policy <br>
+			Copyright 2022 by ABC Learning Center. All rights reserved
+		</div>
+		<div id="footerLinks">
+			<a class="footLinks" href="privacy_policy.html">Privacy Policy</a> |
+			<a class="footLinks" href="sitemap.html">Sitemap</a> |
+			<a class="footLinks" href="aboutus.html">About</a> |
+			<a class="footLinks" href="contact_us.html">Contact</a> 
+		</div>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+	let drp = true;
+	$('#dropContent').hide();
+	$('#dropDown').hover(function () {
+	  if(drp === true) {
+		$('#dropContent').fadeIn();
+		drp = false;
+	  } else {
+		$('#dropContent').fadeOut();
+		 drp = true;
+	  }
+	})
+});
+</script>
+</html>

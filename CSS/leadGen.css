@@ -1,0 +1,154 @@
+/* General */
+body {
+    background-image: url('../Pictures/leadbackground.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#generalCon {
+    background-color: rgba(0,0,0, 0.60);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+/* General */
+/* Logo Side */
+#logSide {
+    height: 80%;
+    width: 40%;
+    margin: 75px 0 75px 20px ;
+    text-align: center;
+
+}
+
+#logSide img {
+    padding:210px 0;
+}
+/* Logo Side */
+/* Form Side */
+#formSide {
+    height: 80%;
+    width: 40%;
+    background-color: rgb(255, 255, 255, 0.50);
+    margin: 75px 20px 75px 0 ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:60px;
+}
+/* Form */
+#formSide form {
+    height: 70%;
+    font-size: 20px;
+    padding-top: 40px;
+    width: 80%;
+}
+
+#forBut {
+    width: 80%;
+    height: 30% ;
+}
+
+#formSide label {
+    color: #023047;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inPut {
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    border: #023047 solid 3px;
+}
+.inPut:focus {
+    outline: none;
+}
+#check {
+    width: 16px;
+    height: 16px;
+    margin-left:150px ;
+}
+#code {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: #023047 solid 3px;
+    font-size: 16px;
+    color: #023047;
+}
+#code:focus {
+    outline: none;
+}
+.valOpt:hover {
+    color:#fb8500;
+    background-color: #023047;
+}
+.tel {
+    border-radius: 10px;
+    height: 30px;
+    width: 76.6%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: #023047 solid 3px;
+}  
+/* Form */
+/* Buttons */
+.btn {
+    background-color: #023047;
+    color: #fb8500;
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+/* For JS */
+.formControl small {
+    color: #840e01;
+    visibility: hidden;
+}
+
+.formControl.error .inPut {
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    border: #840e01 solid 3px;
+}
+.formControl.error .inPut:focus {
+    outline: none;
+}
+
+.formControl.success .inPut{
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    border: #1b8401 solid 3px;
+}
+.formControl.success .inPut:focus {
+    outline: none;
+}
+.formControl.error small {
+    color: #840e01;
+    visibility: visible;
+}
+.checkReq.error {
+    font-size: 12px;
+    font-weight: regular;
+    color: #840e01;
+    visibility: visible;
+}

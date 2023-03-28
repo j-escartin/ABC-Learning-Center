@@ -1,0 +1,219 @@
+body {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+#header {
+	height: 10%;
+	background-color:#023047;
+	display: flex;
+}
+#mainBody {
+	height: 80%;
+}
+#footer {
+	height: 10%;
+	background-color:#023047;
+	display: flex;
+}
+
+#logMenu {
+	width: 10%;
+	display: flex;
+	justify-content: left;
+	color: #fb8500;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	padding: 10px;
+	/* background-color: lightcoral; */
+}
+#logo {
+	width: 100px;
+	height: 100%;
+	/* background-color: white; */
+}
+#homeIcon {
+	/* width: 100px; */
+	/* padding: 5px; */
+	text-align: right;
+	color:  #fb8500;
+	height: 100%;
+	font-size: 40px;
+	/* background-color: white; */
+}
+#wordMenu {
+	width: 30%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.wMLink{
+	text-decoration: none;
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 50px;
+	color: #fb8500;
+}
+.wMLink:hover {
+	color: white;
+}
+/* For Search Bar */
+#searchBar {
+	width: 30%;
+	text-align: left;
+	justify-content: right;
+	display: flex;
+	align-items: center;
+	/* background-color: lightblue; */
+	margin-left: 300px;
+}
+
+#search {
+	background-color: white;
+	width: 70%;
+	height: 30px;
+	display: flex;
+	border-radius: 10px;
+}
+#searchInput {
+	width: 85%;
+	height: 70%;
+	padding: 3px;
+	border-radius: 10px;
+	border: none;
+	font-size: 16px;
+}
+#searchInput:focus {
+	outline: none;
+}
+#inquire {
+	/* background-color: white; */
+	width: 10%;
+	text-align: center;
+	font-size: 25px ;
+	padding: 20px
+}
+
+#inquire a {
+	background-color: white ;
+	text-decoration: none;
+	color: #023047;
+	padding: 5px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+/* For Main Content */
+#courseHead  {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	background-color: white;
+	font-size: 40px;
+	color: #023047;
+}
+#courseContainer {
+	display: flex;
+	/* background-color: gray; */
+	height: 70%;
+	margin-bottom: 45px ;
+	justify-content: center;
+}
+.courseList {
+	background-color: white;
+	width: 28%;
+	margin: 0 28px;
+	border-radius: 15px;
+	-webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+  box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.concourse {
+	/* background-color: lightgray ; */
+	height: 90%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+.courseImage {
+	width: 100%;
+	height: 50%;
+}
+.courseText {
+	/* background-color: lightgreen; */
+	width: 100%;
+	height: 50%;
+}
+.courseImage img {
+	width: 100%;
+	height: 100%;
+}
+.courseText p {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-top: 5px;
+	color: #023047;
+}
+.title {
+	color: #023047;
+}
+/* Footer */
+#priDes {
+	width: 60%;
+	color: white;
+	text-align: center;
+	padding:20px;
+	font-size: 16px;
+}
+#footerLinks {
+	width: 40%;
+	/* background-color: lightgoldenrodyellow; */
+	text-align: center;
+	padding-top: 30px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.footLinks {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 20px;
+	color: white;
+}
+.footLinks:hover{
+	text-decoration: underline;
+}
+#dropContent {
+	/* display: none; */
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 10px;
+  }
+  #dropContent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  #dropContent a:hover {background-color: #023047;
+	color: #ffb703;
+  }
+  
+  #dropdown:hover #dropContent{
+	display: block;
+  }
+  
+  #dropdown:hover .dropbtn {
+	background-color: #023047;
+  }

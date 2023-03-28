@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Learning Center</title>
+    <link rel="icon" href="faviticon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <style>
+      /* Font import */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;700&display=swap");
+      /* Header and Navigation Bar */
+      header {
+        /*Header Background Color */
+        box-sizing: border-box;
+        background-color: #023047;
+        height: 60px;
+        /*Line*/
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffb703;
+        text-decoration: none;
+        /*Flex-Box*/
+        display: flex;
+        align-items: center;
+      }
+      /*Logo*/
+      header > #logo {
+        width: 100px;
+        height: 100px;
+        padding-left: 10px;
+        cursor: pointer;
+      }
+      /*General Navigation*/
+      nav,
+      li,
+      #learn #explore #about #contact {
+        list-style: none;
+        display: inline-block;
+        padding: 0px 20px;
+      }
+      /*Font Design*/
+      #learn,
+      #explore,
+      #about,
+      #contact {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffb703;
+        text-decoration: none;
+      }
+      /*Hover*/
+      #learn:hover,
+      #explore:hover,
+      #about:hover,
+      #contact:hover {
+        color: white;
+      }
+      /*Spacing Only for Navigation */
+
+      header > div {
+        display: inline-flex;
+        padding: 0px 134px;
+      }
+      /*Section 1 */
+      #first {
+        box-sizing: border-box;
+        background-color: #8ecae6;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+      }
+      /* Recreate the World */
+      #first > h1 {
+        text-align: center;
+        color: #023047;
+        font-size: 100px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 10px;
+      }
+      /* In learning how to code */
+      #first > p {
+        text-align: center;
+        color: #023047;
+        font-size: 35px;
+        margin-top: 10px;
+        padding: 0;
+      }
+      /*Search Bar*/
+      #search {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+        padding: 0px 10px;
+        border: 4px solid #023047;
+        background-color: white;
+      }
+      input {
+        width: 600px;
+        height: 40px;
+        background-color: none;
+        border-radius: 50px;
+        border: none;
+        padding: 0px 5px;
+        font-size: 20px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+      /*icon*/
+      div > .material-symbols-outlined {
+        font-size: 200%;
+        color: black;
+        display: inline-flex;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+      }
+      /*Section 2 */
+      /*Feature Article*/
+      #second > h2 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 30px;
+        color: #023047;
+      }
+      Image Slider
+      #slider {
+        overflow: hidden;
+      }
+      #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 10s slider infinite;
+      }
+      #slider figure img {
+        width: 20%;
+        float: left;
+        height: 500px;
+      }
+      /*Animation for Slider 8 */
+      @keyframes slider {
+        0% {
+          left: 0;
+        }
+        20% {
+          left: 0;
+        }
+        25% {
+          left: -100%;
+        }
+        45% {
+          left: -100%;
+        }
+        50% {
+          left: -200%;
+        }
+        70% {
+          left: -200%;
+        }
+        75% {
+          left: -300%;
+        }
+        95% {
+          left: -300%;
+        }
+        100% {
+          left: -400%;
+        }
+      }
+      /*footer*/
+      footer {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: #023047;
+        /*Text*/
+        color: white;
+        text-align: center;
+      }
+      footer > .privacy {
+        text-decoration: underline;
+        color: white;
+        padding-bottom: 0;
+        margin: 0;
+      }
+      /* Dropdown */
+      .dropbtn {
+  background-color: #023047;
+  color:#ffb703 ;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #023047;
+  color: #ffb703;
+}
+
+.dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #023047;
+}
+    </style>
+  </head>
+  <body>
+    <!--Header and Navigation Menu-->
+    <header>
+      <!--Left Side Navigation-->
+      <img id="logo" src="Pictures/logo.png" alt="Logo" />
+      <nav id="leftnav">
+        <ul>
+          <li  class="dropdown">
+             <a href="" class="dropbtn" style="text-decoration: none;">Learn</a> 
+            <!-- Dropdown -->
+            <div class="dropdown-content">
+            <a href="Pages/course1.html">HTML</a>
+            <a href="Pages/course2.html">CSS</a>
+            </div>
+           <!-- Dropdown -->
+
+          </li>
+          <li>
+            <a
+              onclick="alert('Are you sure you want to leave the page?')"
+              href="Pages/courseListing.html"
+              id="explore"
+              >Courses</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!--For Flex Spacing-->
+      <div></div>
+      <div></div>
+      <div></div>
+      <!--Right Side Navigation-->
+      <nav id="rightnav">
+        <ul>
+          <li>
+            <a
+              href="Pages/contact_us.html"
+              id="about"
+              >About</a
+            >
+          </li>
+          |
+          <li>
+            <a
+              href="Pages/contact_us.html"
+              id="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Section 1 and Search Bar-->
+    <section id="first">
+      <!--Content-->
+      <h1>Recreate the World</h1>
+      <p>In Learning How to Code</p>
+      <!--Search Bar-->
+      <form action="" id="search" role="search">
+        <div>
+          <input
+            type="text"
+            id="searchinput"
+            name="check"
+            spellcheck="false"
+            placeholder="Search Lessons"
+          />
+          <span class="material-symbols-outlined" float="right"
+            >travel_explore</span
+          >
+        </div>
+      </form>
+    </section>
+    <!--Section 2 and Feature Contents-->
+    <section id="second">
+      <h2>Feature Contents</h2>
+      <!--Carousel-->
+      <div id="slider">
+        <figure>
+          <img src="Pictures/content1.png" alt="Content 1" />
+          <img src="Pictures/content2.png" alt="Content 2" />
+          <img src="Pictures/content3.png" alt="Content 3" />
+          <img src="Pictures/content4.png" alt="Content 4" />
+          <img src="Pictures/content1.png" alt="Content 1" />
+          <!--<img src="content5.png" alt="Content 5">
+        <img src="content6.png" alt="Content 6"> -->
+        </figure>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <p>
+        While using this site, you agree to have read and accepted our terms of
+        use, cookies, privacy policy <br />
+        Copyright 2022 by ABC Learning Center. All rights reserved
+      </p>
+      <a
+        class="privacy"
+        href="Pages/sitemap.html"
+      >
+        Sitemap</a
+      >
+      |
+      <a
+        class="privacy"
+        href="Pages/privacy_policy.html"
+        >Privacy Policy</a
+      >
+    </footer>
+  </body>
+  <script>
+    $(document).ready(function() {
+        let drp = true;
+        $('.dropdown-content').hide();
+        $('.dropdown').hover(function () {
+          if(drp === true) {
+            $('.dropdown-content').fadeIn();
+            drp = false;
+          } else {
+            $('.dropdown-content').fadeOut();
+             drp = true;
+          }
+        })
+    });
+  </script>
+</html>

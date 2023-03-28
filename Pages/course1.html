@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC_Learning_Center</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <style>
+      /* Font import */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;700&display=swap');
+    #header{
+      display: flex;
+      background-color:#023047;
+      width: 100%;
+      height: 80px;
+    }
+    #homepage{
+      display: flex;
+      background-color: rgb(243, 243, 243);
+      width: 100%;
+      height: 90%;
+      justify-content: center;
+    }
+    #footer{
+      display: flex;
+      background-color: #023047;
+      width: 100%;
+      height: 10%;
+      font-size: 30px;
+      color: white;
+    }
+    #modules{
+      display: flex;
+      background-color: rgb(243, 243, 243);
+      width: 100%;
+      height: 90%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #home_icon {
+      width: 5%;
+      font-size: 60px;
+      padding: 10px 0 10px 10px;
+      text-align: center;
+      color:  #fb8500;
+    }
+    #logo {
+      width: 5%;
+      text-align: center;
+      padding: 5px;
+      border-left: #fb8500 solid 3px;
+    }
+    #learn {
+      width: 10%;
+      margin: 0 10px;
+      font-size: 25px;
+      text-align: center;
+      padding: 20px;
+    }
+    #explore {
+      width: 10%;
+      margin: 0 10px;
+      font-size: 25px;
+      text-align: center;
+      padding: 20px;
+    }
+    #search_bar {
+      width: 40%;
+      margin: 0 10px 0 190px;
+      text-align: center;
+      padding: 20px;
+    }
+    #searchinput:focus{
+      outline: none;
+    }
+    #c1 {
+      width: 30%;
+      height: 80%;
+      background-color: white;
+      margin: 60px;
+      border-radius: 30px;
+      -webkit-box-shadow: 3px 6px 14px 0px rgba(0,0,0,0.64); 
+      box-shadow: 3px 6px 14px 0px rgba(0,0,0,0.64);
+     
+      align-content: center;
+    }
+    #description {
+      width: 50%;
+      height: 80%;
+      margin: 60px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #con1 {
+      width: 100%;
+      height: 25%;
+      margin: 10px 0;
+      flex-direction: row;
+      display: flex;
+      border-right:#023047 solid 3px;
+    }
+    #con2 {
+      width: 100%;
+      height: 25%;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row-reverse;
+      border-left:#023047 solid 3px;
+    }
+    #con3 {
+      width: 100%;
+      height: 25%;
+      margin: 10px 0;
+      display: flex;
+      border-right:#023047 solid 3px;
+    }
+    #photo1 {
+      width: 20%;
+      height: 90%;
+      border: #219ebc solid 3px;
+      background-color: white;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+    }
+    #des1{
+      width: 80%;
+      height: 80%;
+      margin-left:20px;
+    }
+    #photo2 {
+      width: 20%;
+      height: 90%;
+      border: #219ebc solid 3px;
+      background-color: white;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+    }
+    #des2{
+      width: 80%;
+      height: 80%;
+      margin-right:20px;
+      margin-left: 5px;
+    }
+    #photo3 {
+      width: 20%;
+      height: 90%;
+      border: #219ebc solid 3px;
+      background-color: white;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+    }
+    #des3{
+      width: 80%;
+      height: 80%;
+      margin-left:20px;
+    }
+    #cpic{
+      width: 80%;
+      height: 50%;
+      margin: 20px 40px;
+    }
+    #mod1 {
+      width: 95%;
+      height: 75px;
+      background-color: white;
+      margin: 10px;
+      display: flex;
+      border-left:#023047 solid 3px;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+
+    }
+    #mod2 {
+      width: 95%;
+      height: 75px;
+      background-color: white;
+      margin: 10px;
+      display: flex;
+      border-left:#023047 solid 3px;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+
+    }
+    #mod3 {
+      width: 95%;
+      height: 75px;
+      background-color: white;
+      margin: 10px;
+      display: flex;
+      border-left:#023047 solid 3px;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+
+    }
+    #mod4 {
+      width: 95%;
+      height: 75px;
+      background-color: white;
+      margin: 10px;
+      display: flex;
+      border-left:#023047 solid 3px;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+
+    }
+    #price {
+      width: 95%;
+      height: 80px;
+      background-color: white;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23);
+    }
+    #modules p {
+      text-align: center;
+      font-size: 30px;
+      color: #023047;
+      font-weight: bold;
+    }
+    #mword1 {
+      width: 90%;
+      text-align: left;
+      padding: 30px;
+      font-size: 20px;
+      color: #023047;
+    }
+    #mword2 {
+      width: 90%;
+      text-align: left;
+      padding: 30px;
+      font-size: 20px;
+      color: #023047;
+    }
+    #mword3 {
+      width: 90%;
+      text-align: left;
+      padding: 30px;
+      font-size: 20px;
+      color: #023047;
+    }
+    #mword4 {
+      width: 90%;
+      text-align: left;
+      padding: 30px;
+      font-size: 20px;
+      color: #023047;
+    }
+    #pri {
+      width: 40%;
+      border-left: #023047 solid 3px;
+    }
+    #pricon {
+      width: 10%;
+    }
+    #privacy_description {
+      width: 70%;
+    }
+    /* Dropdown */
+  .dropbtn {
+  background-color: #023047;
+  color:#ffb703 ;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #023047;
+  color: #ffb703;
+}
+
+.dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #023047;
+}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="home_icon">
+        <a style="color: #fb8500;" href="../index.html"><span class="iconify" data-icon="clarity:home-solid"></span></a>
+      </div>
+      <div id="logo">
+        <img src="../Pictures/logo.png" alt="Logo" style="width: 100%; height: 100%; "></a>
+      </div>
+      <div class="dropdown">
+        <a href="" class="dropbtn" style="text-decoration: none; display: block; padding: 20px; font-size: 25px;">Learn</a> 
+        <!-- Dropdown -->
+        <div class="dropdown-content">
+        <a href="course2.html">CSS</a>
+        </div>
+       <!-- Dropdown -->
+      </div>
+      <div id="explore">
+        <a href="courseListing.html" style="text-decoration: none;
+        color: #FFB703; font-family: 'Inter', sans-serif;">Courses</a>
+      </div>
+      <div id="search_bar">
+        <form action=""></form>
+          <input type="text" id="searchinput" name="check" spellcheck="false" placeholder="Search Lessons"
+          style="width:60%; height:25px; border-radius:20px; background-color:white; padding: 3px;
+           border: 5px solid white; font-family: 'Inter', sans-serif; font-size: 16px;">
+           <span class="material-symbols-outlined" style="position: absolute; top: 35px; right: 230px;
+           font-size: 30px;color: #023047;">travel_explore</span>
+        </form>
+       
+      </div>
+    </div>
+    <div id="homepage">
+      <div id="c1">
+        <div style="font-size:36px; background-color:#023047;color:#fb8500; border-radius: 50%; padding: 5px;
+        margin: 30px 0 0 200px; width: 40px; height: 40px; text-align: center; font-weight: bold;">1</div>
+        <div id="cpic">
+          <img src="../Pictures/content1.png" alt="HTML" width="100%" height="100%" style="border-radius:20px;">
+        </div>
+        <div style="text-align: center;">
+          <h3 style="color:#023047;">Hypertext Markup Language Certification</h3>
+          <ul style="list-style-type: none; color:#219ebc;">
+            <li>-Learn HTML for a Month</li><br>
+            <li>-Join with Live Instructors </li><br>
+            <li>-Learn the Foundation of Web Designing</li><br>
+          </ul>
+        </div>
+      </div>
+      <div id="description">
+        <p style="text-align: center; font-size: 30px; color: #023047; font-weight: bold;">What Could I Get?</p>
+        <div id="con1">
+          <div id="photo1">
+            <span class="iconify" data-icon="ph:student-light" style="color: #023047; font-size: 80px;; 
+            padding: 25px 35px;"></span>
+          </div>
+          <div id="des1" style="font-weight:bold;font-size:18px; color: #023047;">
+            Become a Master in HTML <br>
+            <span style="font-size:16px; color:rgb(42, 40, 40); font-weight:300;">
+              Master the fundamental concepts of Hypertext Markup Language (HTML).
+              This course will help you plan the structure of your basic website.
+            </span>
+          </div>
+        </div>
+        <div id="con2">
+          <div id="photo2">
+            <span class="iconify" data-icon="eos-icons:machine-learning-outlined" style="color: #023047; font-size: 80px;
+            padding:25px 35px;"></span>
+          </div>
+          <div id="des2" style="font-weight:bold;font-size:18px; color: #023047;">
+            Immersed with Unique Learning Environment <br>
+            <span style="font-size:16px; color:rgb(42, 40, 40); font-weight:300;">
+              Learn Blended Learning: E-Learning, Project Assignment, Flipped, Class/ 
+              Mentoring, Assessment
+            </span>
+          </div>
+        </div>
+        <div id="con3">
+          <div id="photo3">
+            <span class="iconify" data-icon="carbon:machine-learning-model"  style="color: #023047; font-size: 80px;
+            padding:25px 35px;"></span>
+          </div>
+          <div id="des3" style="font-weight:bold;font-size:18px; color: #023047;">Course Certification <br>
+            <span style="font-size:16px; color:rgb(42, 40, 40); font-weight:300;">
+              Advanced Certificate for Hypertext Markup Language
+            </span>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div id="modules">
+      <p>Modules</p>
+      <div id="mod1">
+        <div id="mword1">
+          ABC- Basic HTML Programming (Synchronous and Asynchronous Learning (L00011)
+        </div>
+        <div id="but1" style="color: #023047; font-size: 30px; padding: 25px; text-align: center;">
+          <span id="plus1" class="iconify show1" data-icon="ant-design:plus-circle-outlined"></span>
+          <span id="minus1" class="iconify show1" data-icon="akar-icons:circle-minus"></span>
+        </div>
+      </div>
+<!-- Mod1 -->
+      <div id="mod1sam" style="border-top:#023047 solid 1px; background-color:white;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); width: 95%; text-align: left;">
+        <h2 style="text-align: center;">Learning Outcomes</h2>
+        <h3 style="padding-left: 400px;">Knowledge</h3>
+        <ul style="padding-left: 450px;">
+          <li>Learn the basic of Hypertext Markup Language</li> <br>
+          <li>Learn different basic concepts with examples of Hypertext Markup Language</li>
+        </ul>
+        <h3 style="padding-left: 400px;">Skills</h3>
+        <ul style="padding-left: 450px;">
+          <li>Execute the basic of Hypertext Markup Language</li>
+          <li>Gain competency of the different basic concepts of Hypertext Markup Language</li>
+        </ul style="padding-left: 400px;">
+        <h3 style="padding-left: 400px;">Other Information</h3>
+        <ul style="padding-left: 450px;">
+          <li>Funding Validity Period: Until 31st of December 2022</li>
+          <li>Course Developer: ABC Learning Center</li>
+        </ul>
+      </div>
+<!-- Mod2 -->
+      <div id="mod2"> 
+        <div id="mword2">
+          ABC- Advance HTML Programming (Synchronous and Asynchronous Learning (L00012)
+        </div>
+        <div id="but2" style="color: #023047; font-size: 30px; padding: 25px; text-align: center;">
+          <span id="plus2" class="iconify show2" data-icon="ant-design:plus-circle-outlined"></span>
+          <span id="minus2" class="iconify show2" data-icon="akar-icons:circle-minus"></span>
+        </div>
+      </div>
+<!-- Mod2 -->
+      <div id="mod2sam" style="border-top:#023047 solid 1px; background-color:white;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); width: 95%; text-align: left;">
+        <h2 style="text-align: center;">Learning Outcomes</h2>
+        <h3 style="padding-left: 400px;">Knowledge</h3>
+        <ul style="padding-left: 450px;">
+          <li>Learn the advanced topic of Hypertext Markup Language </li> <br>
+          <li>Learn different advanced concepts with examples of Hypertext Markup Language</li>
+        </ul>
+        <h3 style="padding-left: 400px;">Skills</h3>
+        <ul style="padding-left: 450px;">
+          <li>Execute the advanced topic of Hypertext Markup Language</li>
+          <li>Gain competency of the different advanced concepts of Hypertext Markup Language</li>
+        </ul style="padding-left: 400px;">
+        <h3 style="padding-left: 400px;">Other Information</h3>
+        <ul style="padding-left: 450px;">
+          <li>Funding Validity Period: Until 31st of December 2022</li>
+          <li>Course Developer: ABC Learning Center</li>
+        </ul>
+      </div>
+<!-- Mod2 -->
+<!-- Mod3 -->
+      <div id="mod3">
+        <div id="mword3"> 
+          ABC- HTML Media and API (Synchronous and Asynchronous Learning (L00013)
+        </div>
+        <div id="but3" style="color: #023047; font-size: 30px; padding: 25px; text-align: center;">
+          <span id="plus3" class="iconify show3" data-icon="ant-design:plus-circle-outlined"></span>
+          <span id="minus3" class="iconify show3" data-icon="akar-icons:circle-minus"></span>
+        </div>
+      </div>
+<!-- Mod3 -->
+      <div id="mod3sam" style="border-top:#023047 solid 1px; background-color:white;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); width: 95%; text-align: left;">
+        <h2 style="text-align: center;">Learning Outcomes</h2>
+        <h3 style="padding-left: 400px;">Knowledge</h3>
+        <ul style="padding-left: 450px;">
+          <li>Learn the HTML Media and API of Hypertext Markup Language </li> <br>
+          <li>Learn different HTML Media and API concepts with examples of Hypertext Markup Language</li>
+        </ul>
+        <h3 style="padding-left: 400px;">Skills</h3>
+        <ul style="padding-left: 450px;">
+          <li>Execute the HTML Media and API of Hypertext Markup Language</li>
+          <li>Gain competency of the different HTML Media and API concepts of Hypertext Markup Language</li>
+        </ul style="padding-left: 400px;">
+        <h3 style="padding-left: 400px;">Other Information</h3>
+        <ul style="padding-left: 450px;">
+          <li>Funding Validity Period: Until 31st of December 2022</li>
+          <li>Course Developer: ABC Learning Center</li>
+        </ul>
+      </div>
+<!-- Mod3 -->
+<!-- Mod4 -->
+      <div id="mod4">
+        <div id="mword4"> 
+          ABC- HTML Website Implementation (Synchronous and Asynchronous Learning (L00014)
+        </div>
+        <div id="but4" style="color: #023047; font-size: 30px; padding: 25px; text-align: center;">
+          <span id="plus4" class="iconify show4" data-icon="ant-design:plus-circle-outlined"></span>
+          <span id="minus4" class="iconify show4" data-icon="akar-icons:circle-minus"></span>
+        </div>
+      </div>
+<!-- Mod4 -->
+<div id="mod4sam" style="border-top:#023047 solid 1px; background-color:white;
+      -webkit-box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); 
+      box-shadow: 3px 7px 14px 0px rgba(0,0,0,0.23); width: 95%; text-align: left;">
+        <h2 style="text-align: center;">Learning Outcomes</h2>
+        <h3 style="padding-left: 400px;">Knowledge</h3>
+        <ul style="padding-left: 450px;">
+          <li>Learn the HTML Website Implementation of Hypertext Markup Language  </li> <br>
+          <li>Learn different HTML Website Implementation concepts with examples of Hypertext Markup Language</li>
+        </ul>
+        <h3 style="padding-left: 400px;">Skills</h3>
+        <ul style="padding-left: 450px;">
+          <li>Execute the HTML Website Implementation of Hypertext Markup Language</li>
+          <li>Gain competency of the different HTML Website Implementation concepts of Hypertext Markup Language</li>
+        </ul style="padding-left: 400px;">
+        <h3 style="padding-left: 400px;">Other Information</h3>
+        <ul style="padding-left: 450px;">
+          <li>Funding Validity Period: Until 31st of December 2022</li>
+          <li>Course Developer: ABC Learning Center</li>
+        </ul>
+      </div>
+<!-- Mod4 -->
+      <p>Pricing and Funding</p>
+      <div id="price">
+        <div id="pri" style="color: #023047 ; font-size:20px; text-align: left; padding: 0 10px;">
+           <b>Pricing</b> <br>
+           <span style="font-size:15px; font-weight: light; color: rgb(31, 31, 31);"> See Schedule</span> 
+           <div>
+            <a href="schedule1.html" style="background-color: #023047; color: #fb8500; 
+            font-size: 10px; padding: 8px; font-weight: bold; border-color: none; border-radius: 5px;
+            margin-left:none; text-decoration: none;">Schedule</a>
+            </div>
+        </div>
+        <div id="pricon" style="text-align: center; color: #023047;padding: 30px; font-size: 20px;
+        font-weight: bold;">100USD</div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="privacy_description" style="font-size: 16px; text-align: center; padding: 20px;">
+        While using this site, you agree to have read and accepted our terms of use, cookies, privacy policy <br>
+        Copyright 2022 by ABC Learning Center. All rights reserved
+      </div>
+      <div style="display: flex; width: 8%;">
+        <a href="privacy_policy.html" id="privacy_policy" style="text-decoration: none; color: white; font-size: 20px;
+        text-align:center; padding: 30px 10px; width: 100%;">Privacy_Policy</a> 
+      </div>
+      <div style="display: flex; width: 8%;">
+        <a href="sitemap.html" id="sitemap" style="text-decoration: none; color: white; font-size: 20px;
+        text-align:center; padding: 30px 10px 30px 30px; width: 100%;">Sitemap</a> 
+      </div>
+      <div  style="display: flex; width: 8%;">
+        <a href="aboutus.html" id="about" style="text-decoration: none; color: white; font-size: 20px;
+        text-align:center; padding: 30px 10px; width: 100%;">About</a>
+      </div>
+      <div style="display: flex; width: 8%;">
+        <a href="contact_us.html" id="Contact" style="text-decoration: none; color: white; font-size: 20px;
+        text-align:center; padding: 30px 10px; width: 100%;">Contact</a>
+       </div>
+    </div>
+  </div>
+</body>
+<script>
+// 1st Line
+  $(document).ready(function(){
+  let mod1 = true;
+  $("#mod1sam").hide();
+  $("#minus1").hide();
+  $(".show1").click(function(){
+    if(mod1 == true) {
+      $("#mod1sam").fadeIn();
+      $("#minus1").show();
+      $("#plus1").hide();
+      mod1 = false;
+    } else {
+      $("#mod1sam").fadeOut();
+      $("#minus1").hide();
+      $("#plus1").show();
+    mod1 = true;
+    }
+  });
+  let mod2 = true;
+  $("#mod2sam").hide();
+  $("#minus2").hide();
+  $(".show2").click(function(){
+    if(mod2 == true) {
+      $("#mod2sam").fadeIn();
+      $("#minus2").show();
+      $("#plus2").hide();
+      mod2 = false;
+    } else {
+      $("#mod2sam").fadeOut();
+      $("#minus2").hide();
+      $("#plus2").show();
+    mod2 = true;
+    }
+  });
+  let mod3 = true;
+  $("#mod3sam").hide();
+  $("#minus3").hide();
+  $(".show3").click(function(){
+    if(mod3 == true) {
+      $("#mod3sam").fadeIn();
+      $("#minus3").show();
+      $("#plus3").hide();
+      mod3 = false;
+    } else {
+      $("#mod3sam").fadeOut();
+      $("#minus3").hide();
+      $("#plus3").show();
+    mod3 = true;
+    }
+  });
+  let mod4 = true;
+  $("#mod4sam").hide();
+  $("#minus4").hide();
+  $(".show4").click(function(){
+    if(mod4 == true) {
+      $("#mod4sam").fadeIn();
+      $("#minus4").show();
+      $("#plus4").hide();
+      mod4 = false;
+    } else {
+      $("#mod4sam").fadeOut();
+      $("#minus4").hide();
+      $("#plus4").show();
+    mod3 = true;
+    }
+        
+    });
+    let drp = true;
+        $('.dropdown-content').hide();
+        $('.dropdown').hover(function () {
+          if(drp === true) {
+            $('.dropdown-content').fadeIn();
+            drp = false;
+          } else {
+            $('.dropdown-content').fadeOut();
+             drp = true;
+          }
+        })
+  });
+</script>
+</html>
