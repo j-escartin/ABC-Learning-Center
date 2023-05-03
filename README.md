@@ -10,7 +10,7 @@ The company wishes to reach a broader audience. They wish to generate more leads
   
 As a measure, this project was created. It will create a website that will assist the firm in a variety of ways, including better leading an audience, responding to current trends, and, most importantly, fulfilling its objective and turning the company's vision into reality. It will adhere to a separate set of requirements for a rich user experience in order to meet the expectations of both the client and the administrator.
 
-## Objective of the Project
+## Experience from the Project
 
 - Planned a Website & Develop branding, wireframes, information architecture & storyboard.
 - Developed a website using HTML, CSS & JavaScript.
